@@ -1,0 +1,335 @@
+/* Global Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  max-height: fit-content;
+}
+
+/* Global Styles*/
+
+/* Start of Nav Styles */
+.global-nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.mb-30 {
+  margin-bottom: 20px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+/* The | of every actions i.e Edit | Delete */
+.action-separator {
+  margin: 0 5px;
+}
+
+.global-nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #bfbfbf;
+}
+
+.global-nav > ul > a {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/* Remove double borders in the middle and add border radius to first and last nav links*/
+.global-nav > ul > a:first-child {
+  border-right-style: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.global-nav > ul > a:nth-child(2) {
+  border-right-style: none;
+}
+.global-nav > ul > a:last-child {
+  border-left-style: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Current active link style*/
+.nav-link-active {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* End of Nav Styles */
+
+.global-h1-header,
+.global-with-navbar-h1 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.global-h1-header {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/* If the page has navbar, minimize margin of top */
+.global-with-navbar-h1 {
+  margin-top: 30px;
+}
+
+/* Global Button Styles */
+.global-btn {
+  min-width: 150px;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 5px 0;
+  background-color: transparent;
+}
+
+.global-cyan-btn {
+  background-color: #66ffff;
+  font-weight: bold;
+}
+
+.global-darken-btn {
+  background-color: #b3b3b3 !important;
+  width: fit-content !important;
+  padding: 3px 10px !important;
+  font-weight: bold;
+}
+
+/* Global Form Styles */
+
+.global-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: nowrap column;
+}
+
+.global-input-container {
+  width: fit-content;
+  margin: 20px 0 20px -212.5px;
+}
+
+.global-input-container > label {
+  display: inline-block;
+  margin-right: 35px;
+  text-align: right;
+  vertical-align: middle;
+  width: 170px;
+  font-weight: bold;
+}
+
+.global-input-container > input {
+  width: 200px;
+}
+
+.global-input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Global Table Styles */
+table.global-table {
+  width: 100vw;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Adding Border Radius in every table */
+table.global-table > thead > tr > th {
+  border-top: solid 2px black;
+  padding: 0 10px;
+}
+
+table.global-table > thead > tr > th:first-child {
+  border-top-left-radius: 5px;
+}
+table.global-table > thead > tr > th:last-child {
+  border-top-right-radius: 5px;
+}
+
+table.global-table > tbody > tr:last-child > td {
+  border-bottom: solid 2px black;
+}
+
+table.global-table > tbody > tr:last-child > td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+table.global-table > tbody > tr:last-child > td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+th {
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+}
+
+tr {
+  border: none;
+}
+td {
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.global-table > thead > tr > th {
+  background-color: #cccccc;
+  font-weight: normal;
+}
+
+/* When there are three columns, make the first one bigger (40% | 30% | 30%) and make their alignment left*/
+.global-table > thead > tr > th:first-child {
+  text-align: left;
+  width: 40%;
+}
+
+.global-table > thead > tr > th:last-child {
+  width: 20%;
+}
+
+.global-table > tbody > tr > td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* To achieve stripped styles in table */
+.global-table > tbody > tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of Global Styles */
+
+/* Global Modal Styles (Overwriting Bootstrap Modal Default Styles)*/
+
+/* For delete modal where it needs to be smaller than Bootstrap Modal's "modal-sm" */
+.modal-xs {
+  width: 250px;
+  margin-left: 120px;
+}
+
+.modal-md2 {
+  min-width: 600px;
+  margin-left: -55px;
+}
+
+.modal-md3 {
+  min-width: 650px;
+  margin-left: -75px;
+}
+
+.delete-modal {
+  padding: 0;
+  cursor: default;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.modal-delete {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-delete > p {
+  margin-bottom: 0;
+}
+
+.modal-content {
+  border: 2px solid black;
+}
+
+.modal-header {
+  justify-content: space-between;
+  padding: 3px;
+  border-bottom: 2px solid black;
+}
+
+.modal-header > h5.modal-title {
+  width: 100%;
+  color: black;
+}
+
+.modal-header > button.btn-close {
+  margin: 0;
+  border: 2px solid black;
+  color: black;
+  opacity: 1;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.modal-delete > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.modal-delete > p {
+  text-align: left;
+  font-weight: 700;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-btn {
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0;
+  background-color: transparent;
+  width: 70px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Everything in here can be overwritten by creating another stylesheet and putting them below this during linking in the head tag */

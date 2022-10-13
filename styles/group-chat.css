@@ -1,0 +1,70 @@
+.container {
+  padding: 0;
+  margin: 25px 0;
+  min-width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.gc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+}
+
+.gc-title {
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+}
+
+.gc-header > button.btn-close {
+  color: black;
+  margin: 0;
+  border: 2px solid black;
+  opacity: 1;
+}
+
+.gc-body {
+  min-height: 40vh;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 40px 10px 0;
+}
+
+.gc-message {
+  text-align: left;
+  margin: 0;
+}
+
+.gc-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 0 10px;
+}
+.gc-footer > label {
+  font-weight: bold;
+  flex: 2;
+}
+
+.gc-footer > input {
+  flex: 8;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.gc-actions {
+  flex: 2;
+}
+
+.gc-actions .gc-btn {
+  border-radius: 10px;
+  padding: 3px 15px;
+  background-color: transparent;
+  width: fit-content;
+  font-weight: 700;
+}

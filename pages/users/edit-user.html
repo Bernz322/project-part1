@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communications Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/global.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="global-nav">
+        <ul>
+            <a href="../group-chat.html">
+                <li>
+                    Group Chat
+                </li>
+            </a>
+            <a class="nav-link-active" href="./users-list.html">
+                <li>
+                    Manage Users
+                </li>
+            </a>
+            <a href="../docmgt/doc-list.html">
+                <li>
+                    Manage Documents
+                </li>
+            </a>
+            <a href="../../logout.html">
+                <li>
+                    Logout
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="global-h1-header global-with-navbar-h1">Edit User Information</h1>
+
+        <form action="./users-list.html" class="global-form">
+            <div class="global-input-container">
+                <label for="full-name">Full Name</label>
+                <input class="global-input" type="text" name="full-name" id="full-name" placeholder="Anne Hunter">
+            </div>
+
+            <div class="global-input-container">
+                <label for="email">Email</label>
+                <input class="global-input" type="email" name="email" id="email" placeholder="anne.hunter@mail.com">
+            </div>
+            <input class="global-btn global-cyan-btn" type="submit" value="Save">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.global-table > thead > tr > th:last-child {
+  width: 50%;
+}
+
+.global-table > thead > tr > th:first-child {
+  text-align: left;
+  width: 50%;
+}
+
+h1.global-with-navbar-h1 > span {
+  font-weight: normal;
+}
+
+.sharing-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 25px 25px 25px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Editing Select dropdown using an image */
+.share-user {
+  text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent url("../assets/dropdown.PNG") no-repeat 270px center;
+}
+
+.sharing-container > label {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.sharing-container > select {
+  text-align: center;
+  height: 34px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.sharing-container > button {
+  font-weight: normal;
+  border-radius: 10px;
+  margin-left: 40px;
+}
